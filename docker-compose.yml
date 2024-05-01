@@ -20,6 +20,9 @@ services:
       - /var/run/docker.sock:/var/run/docker.sock
   kafka-producer:
     image: kafka-producer
+    build:
+      context: producer
+      dockerfile: producer/Dockerfile
     ports:
       - '3000:3000'
     environment:
@@ -29,6 +32,9 @@ services:
       - kafka
   kafka-consumer:
     image: kafka-consumer
+    build:
+      context: consumer
+      dockerfile: consumer/Dockerfile
     depends_on:
       - kafka
     environment:
