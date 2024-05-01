@@ -1,0 +1,19 @@
+{
+  "name": "kafka-consumer",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:jlou711/kafka-producer.git",
+  "author": "Jamie Lou <jlou711@googlemail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "kafkajs": "^2.2.4",
+    "tsc": "^2.0.4",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.12.7"
+  }
+}
